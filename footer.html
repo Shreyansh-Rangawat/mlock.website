@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Footer Styling */
+        .footer {
+            background-color: #222;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        /* Footer Sections */
+        .footer-content {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        /* Footer Headings */
+        .footer-section h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #18ee18;
+        }
+
+        /* App Store & Social Icons */
+        .app-buttons img,
+        .social-icons img {
+            width: 140px;
+            margin: 5px;
+        }
+
+        /* Legal Links */
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-section ul li {
+            margin: 5px 0;
+        }
+
+        .footer-section ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer-section ul li a:hover {
+            color: #18ee18;
+        }
+
+        /* Footer Separator Line */
+        .footer-line {
+            width: 80%;
+            border: 0.5px solid #555;
+            margin: 20px auto;
+        }
+
+        /* Footer Logo */
+        .footer-logo {
+            display: flex;
+            justify-content: center;
+            margin: 10px 0;
+        }
+
+        .logo-text {
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        .logo-m {
+            color: white;
+        }
+
+        .logo-lock {
+            color: #18ee18;
+        }
+
+        /* Copyright */
+        .footer-end {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #bbb;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Get The App Section -->
+                <div class="footer-section">
+                    <h3>Get The App</h3>
+                    <div class="app-buttons">
+                        <a href="#"><img src="google-play.png" alt="Google Play"></a>
+                        <a href="#"><img src="app-store.png" alt="App Store"></a>
+                    </div>
+                </div>
+
+                <!-- Follow Us Section -->
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><img src="facebook.png" alt="Facebook"></a>
+                        <a href="#"><img src="twitter.png" alt="Twitter"></a>
+                        <a href="#"><img src="instagram.png" alt="Instagram"></a>
+                    </div>
+                </div>
+
+                <!-- Legal Section -->
+                <div class="footer-section">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="Terms.html">Terms & Conditions</a></li>
+                        <li><a href="FAQ.html">FAQ</a></li>
+                        <li><a href="Video">Survey Clip</a></li>
+                        <li><a href="idea">Solution Video</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Separator Line -->
+            <hr class="footer-line">
+
+            <!-- Footer Logo -->
+            <div class="footer-logo">
+                <div class="logo-text">
+                    <span class="logo-m">M</span><span class="logo-lock">lock</span>
+                </div>
+            </div>
+
+            <!-- Copyright Text -->
+            <p class="footer-end">© 2025 Mlock. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

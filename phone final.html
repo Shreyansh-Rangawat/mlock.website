@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image/Text Slider Inside Phone</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+
+        .phone-container {
+            position: relative;
+            width: 250px;
+            /* Phone image size */
+            height: 500px;
+            margin: auto;
+            background: url('phone bg.png') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .slider-container {
+            position: absolute;
+            top: 4%;
+            /* Adjust this to fit inside phone screen */
+            width: 230px;
+            height: 480px;
+            overflow: hidden;
+            border-radius: 20px;
+            background: #222;
+            border: 5px solid #000;
+        }
+
+        .slides {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slide {
+            width: 100%;
+            flex: 1 0 100%;
+            text-align: center;
+            font-size: 24px;
+            background: #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        /* First slide with background image */
+        .slide:first-child {
+            background: url('family.jpg') no-repeat center center/cover;
+            color: white;
+        }
+
+        /* Navigation Buttons */
+        .prev,
+        .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: #18ee18;
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+            border: none;
+            font-size: 20px;
+            border-radius: 50%;
+        }
+
+        .prev {
+            left: -30px;
+        }
+
+        .next {
+            right: -30px;
+        }
+
+        .dots {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .dot {
+            height: 10px;
+            width: 10px;
+            margin: 5px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .active {
+            background-color: #18ee18;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Slider Inside Phone</h2>
+
+    <div class="phone-container">
+        <div class="slider-container">
+            <div class="slides">
+                <div class="slide"></div> <!-- First Slide (Image Background) -->
+                <div class="slide">Jain</div>
+                <div class="slide">Hello</div>
+            </div>
+        </div>
+        <button class="prev" onclick="moveSlide(-1)">&#11178;</button>
+        <button class="next" onclick="moveSlide(1)">&#11179;</button>
+    </div>
+
+    <div class="dots">
+        <span class="dot" onclick="currentSlide(0)"></span>
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+    </div>
+
+    <script>
+        let index = 0;
+        const slides = document.querySelector('.slides');
+        const dots = document.querySelectorAll('.dot');
+
+        function moveSlide(n) {
+            index += n;
+            if (index >= 3) index = 2; // Next button should not go beyond last slide
+            if (index < 0) index = 0;  // Prev button should not go before first slide
+            updateSlider();
+        }
+
+        function currentSlide(n) {
+            index = n;
+            updateSlider();
+        }
+
+        function updateSlider() {
+            slides.style.transform = `translateX(-${index * 100}%)`;
+            dots.forEach(dot => dot.classList.remove('active'));
+            dots[index].classList.add('active');
+        }
+
+        updateSlider();
+    </script>
+</body>
+
+</html>

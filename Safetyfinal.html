@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mlock | Secure Your Belongings Seamlessly</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- icon-libery -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="playstore.css" />
+    <!-- <link rel="stylesheet" href="Homefinal.html"> -->
+    <style>
+        /* Custom styles for hover and transition */
+        .btn-hover:hover {
+            background-color: #4b4b4b;
+            /* Light black on hover */
+            color: #fff;
+
+        }
+
+        /* only About section */
+        .menu-item-hover {
+            font-weight: bold;
+
+        }
+
+        .menu-item-hover1 {
+            font-weight: bold;
+            text-decoration: 3px black underline;
+            color: #18ee18;
+        }
+
+        /* All Nav section */
+        .menu-item-hover:hover {
+            color: #18ee18;
+            /* Dark Green on hover */
+            font-size: medium;
+            font-weight: bold;
+            text-decoration: 3px black underline;
+        }
+
+        /* Logo: M in white, lock in dark green */
+        .logo-container {
+            display: flex;
+            align-items: center;
+            background-color: #000000;
+            padding: 5px 23px;
+            border-radius: 15px;
+            margin-left: 30px;
+            margin-right: 50px;
+
+        }
+
+        .logo-text1 {
+            font-size: 32px;
+            font-weight: bold;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+        }
+
+        .logo-m1 {
+            color: white;
+            size: 0cap;
+        }
+
+        .logo-lock1 {
+            color: #18ee18;
+            /* Dark Green for lock */
+            size: 0cap;
+        }
+
+        .img-logo {
+            width: 135px;
+            /* Adjust size as needed */
+            height: 60px;
+            margin-left: 40px;
+            margin-right: 80px;
+        }
+
+        /* Dark Green background for download button */
+        .btn-download {
+            background-color: #18ee18;
+            /* Dark Green */
+            color: white;
+            margin-right: 30px;
+            font-weight: bold;
+        }
+
+        /* Hover effect for download button */
+        .btn-download:hover {
+            background-color: #4b4b4b;
+            /* Light black */
+            color: white;
+        }
+
+
+
+        /*.Container:hover {
+            background-color: #4b4b4b;
+            /* Light black */
+        /* color: white;
+        } */
+
+
+
+        .heading {
+            margin: 50px 80px;
+            color: #000000;
+            font-size: 70px;
+            font-weight: bold;
+
+        }
+
+        .heading1 {
+            margin-left: 80px;
+            color: #000000;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .heading1:hover {
+            background-color: #18ee18;
+        }
+
+        .footer {
+            background-color: #0a1904;
+            /* Black Background */
+            color: white;
+            margin-top: 140px;
+            padding: 40px 0px 0px;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+
+        }
+
+        /* Footer Sections */
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 20px;
+            background-color: #0a1904;
+        }
+
+        /* Footer Headings */
+        .footer-section h3 {
+            font-size: 18px;
+            margin-bottom: 12px;
+            color: #18ee18;
+            /* Green Heading */
+        }
+
+        /* App Store Buttons */
+        .app-buttons img {
+            width: 140px;
+            margin: 5px 0px;
+        }
+
+        /* Social Icons */
+        .social-icons {
+            display: flex;
+            gap: 20px;
+            margin-right: 20px;
+            font-size: 20px;
+        }
+
+        .social-icons img {
+            width: 40px;
+            transition: transform 0.3s;
+        }
+
+        .social-icons img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Navigation & Legal Links */
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-section ul li {
+            margin: 5px 0px;
+        }
+
+        /* Quick Links & Legal Text in Black */
+        .footer-section ul li a {
+            color: white;
+            /* Black Text */
+
+            /* White Background for Contrast */
+            padding: 5px 10px;
+            display: inline-block;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+
+        }
+
+        /* Hover Effect */
+        .footer-section ul li a:hover {
+            background-color: #18ee18;
+            /* Green on Hover */
+            color: black;
+            transition: 0.3s;
+        }
+
+        /* Footer Separator Line */
+        .footer-line {
+            width: 80%;
+            border: 0.5px solid #18ee18;
+            margin: 20px auto;
+        }
+
+        /* Footer Logo 
+         .footer-logo {
+            display: flex;
+            justify-content: center;
+            margin: 10px 0;
+
+        } */
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            background-color: white;
+            padding: 5px 23px;
+            border-radius: 15px;
+            margin-left: 50px;
+            margin-right: 1100px;
+            /*justify-content: center;*/
+
+        }
+
+        .logo-text {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 1px;
+
+
+        }
+
+        .logo-m {
+            color: black;
+            size: 0cap;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+        }
+
+        .logo-lock {
+            color: #18ee18;
+            /* Dark Green for lock */
+            size: 0cap;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+        }
+
+        .img-logo-footer {
+            width: 135px;
+            /* Adjust size as needed */
+            height: 60px;
+            margin-left: 60px;
+            border-radius: 10px;
+        }
+
+
+        /* Copyright */
+        .footer-end {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #dbd9d9;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+        }
+
+        /* Mobile Menu */
+        .mobile-menu {
+            display: none;
+        }
+
+        .mobile-menu.active {
+            display: block;
+        }
+
+        /*section-1 hero*/
+        .hero {
+            background-image: linear-gradient(rgba(107, 67, 49, 0.5), rgba(107, 67, 49, 0.5)), url('storyimg2.png');
+            color: black;
+            padding: 80px 20px;
+            height: 120vh;
+            /* Full viewport height */
+            width: 100vw;
+            /* Full viewport width */
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+
+        }
+
+        .lineh1 {
+            font-size: 50px;
+            font-weight: bold;
+            color: white;
+
+            margin-bottom: 10px;
+        }
+
+        .linep1 {
+            font-size: 40px;
+            font-weight: bold;
+            color: white;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .section-2 {
+            padding: 60px 20px;
+            max-width: 1000px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .section-2 h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .sub-text {
+            font-size: 1.2rem;
+            color: #888;
+            margin-bottom: 30px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .feature {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .feature:hover {
+            transform: translateY(-5px);
+        }
+
+        .icon {
+            font-size: 2rem;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .lineh3 {
+            font-size: 1.3rem;
+            margin-bottom: 5px;
+            font-weight: 660;
+        }
+
+        p {
+            font-size: 1rem;
+            color: #444;
+        }
+
+        .lineh2 {
+            font-weight: 700;
+            font-size: 25px;
+            color: #0a1904;
+        }
+
+        /*hero section-3*/
+        /* New design for 'How We Ensure Safety' section */
+
+
+
+
+        /*mkl;mlkmkl*/
+        /* Section Styling */
+        .section-3 {
+            padding: 60px 20px;
+            max-width: 1100px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .section-3 h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .sub-text {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        /* Grid Layout */
+        .safety-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            justify-content: center;
+
+        }
+
+        /* Safety Card Design */
+        .safety-card {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+            text-align: center;
+            justify-items: center;
+        }
+
+        .safety-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Icon Styling */
+        .safety-card img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 10px;
+
+        }
+
+        /* Text Styling */
+        .safety-card h3 {
+            font-size: 1.3rem;
+            color: #333;
+            margin-bottom: 8px;
+        }
+
+        .safety-card p {
+            color: #777;
+            font-size: 1rem;
+            line-height: 1.4;
+        }
+
+        /*hero section-4*/
+        .section-4 {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            height: 300px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #222;
+            font-size: 24px;
+            margin-bottom: 20px;
+
+        }
+
+        .limitation {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            padding: 10px;
+            border-left: 5px solid #0a1904;
+            background: #f0f0f0;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .limitation i {
+            font-size: 22px;
+            color: #666;
+            margin-right: 12px;
+            min-width: 30px;
+            text-align: center;
+        }
+
+        .limitation p {
+            font-size: 17px;
+            color: #0a1904;
+            font-weight: 400;
+            margin: 0;
+        }
+
+        .highlight {
+            font-weight: 700;
+            color: #0a1904;
+            font-size: 17px;
+        }
+    </style>
+</head>
+
+<body class="bg-white text-black">
+
+    <!-- Header Section -->
+    <header class="flex justify-between items-center p-6 fixed top-0 left-0 right-0 bg-white shadow-md z-50">
+
+        <!-- Left Side: Logo -->
+        <!-- <div class="logo-container">
+            <div class="logo-text1">
+                <span class="logo-m1">M</span><span class="logo-lock1">lock</span>
+            </div>
+        </div> -->
+        <a href="https://mlock.in">
+            <img class="img-logo" src="Web-logo-img-final1.jpg" alt="Mlock Logo">
+        </a>
+        <!-- Desktop Navigation Bar (Center) -->
+        <nav class="hidden md:flex space-x-7 text-black">
+            <a href="Homefinal.html" class="menu-item-hover">Home</a>
+            <a href="Aboutusfinal.html" class="menu-item-hover">About Us</a>
+            <a href="Safetyfinal.html" class="menu-item-hover1">Safety</a>
+            <a href="Teamfinal.html" class="menu-item-hover">Team</a>
+            <a href="Blogfinal.html" class="menu-item-hover">Blog</a>
+            <a href="contactfinal.html" class="menu-item-hover">Contact</a>
+        </nav>
+        <!-- Mobile Menu Icon -->
+        <div class="md:hidden">
+            <button id="menu-btn" class="text-3xl">&#9776;</button>
+        </div>
+
+
+        <!-- Right Side: Download Button -->
+        <a href="#" class="hidden md:block btn-download py-3 px-7 rounded-md">Download The App</a>
+    </header>
+
+    <!-- Mobile Navigation Menu -->
+    <nav id="mobile-menu" class="mobile-menu bg-black text-white p-5">
+        <a href="Homefinal.html" class="block p-2 menu-item-hover">Home</a>
+        <a href="Aboutusfinal.html" class="block p-2 menu-item-hover">About Us</a>
+        <a href="Safetyfinal.html" class="block p-2 menu-item-hover1">Safety</a>
+        <a href="Teamfinal.html" class="block p-2 menu-item-hover">Team</a>
+        <a href="Blogfinal.html" class="block p-2 menu-item-hover">Blog</a>
+        <a href="contactfinal.html" class="block p-2 menu-item-hover">Contact</a>
+        <a href="#" class="block p-3 mt-2 btn-download text-white rounded">Download The App</a>
+    </nav>
+
+    <!-- JavaScript for Mobile Menu -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+        });
+    </script>
+
+    <!-- Hero Section-1-->
+    <section>
+
+        <div class="hero">
+            <h1 class="lineh1">Your Luggage, Our Responsibility<br>Smart, Secure & Hassle-Free Storage</h1>
+            <!-- <h5 class="linep1">Smart, Secure & Hassle-Free Storage</h5> -->
+        </div>
+    </section>
+    <!-- /*hero section-2*/ -->
+    <section class="section-2">
+        <h2 class="lineh2">Why Mlock is Secure?</h2>
+        <p class="sub-text">We ensure top-tier security with advanced technology and high-quality materials.</p>
+        <div class="grid">
+            <div class="feature">
+                <span class="icon">🔒</span>
+                <h3 class="lineh3">Best Quality Lockers</h3>
+                <p>Durable, damage-resistant, and designed for long-term safety.</p>
+            </div>
+            <div class="feature">
+                <span class="icon">📱</span>
+                <h3 class="lineh3">Phone-Based Access</h3>
+                <p>Seamless check-in and checkout through our mobile app.</p>
+            </div>
+            <div class="feature">
+                <span class="icon">🛠</span>
+                <h3 class="lineh3">Sensor Detection</h3>
+                <p>Real-time luggage monitoring with smart sensor technology.</p>
+            </div>
+            <div class="feature">
+                <span class="icon">🚨</span>
+                <h3 class="lineh3">Emergency Alarm</h3>
+                <p>Instant alerts in case of strong impacts or tampering attempts.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- hero section-3 -->
+    <section class="section-3">
+        <h2 class="lineh2">How We Ensure Safety?</h2>
+        <p class="sub-text">Our advanced security measures guarantee the safety of your luggage at every step.</p>
+        <div class="safety-cards">
+            <div class="safety-card">
+                <img src="locker icon.png" alt="Locker Booking Icon">
+                <h3 class="lineh3">Step 1: Book a Locker</h3>
+                <p>Secure your locker effortlessly via the Mlock app.</p>
+            </div>
+            <div class="safety-card">
+                <img src="phone icon.png" alt="Phone Check-in Icon">
+                <h3 class="lineh3">Step 2: Phone-Based Check-in</h3>
+                <p>Forget keys! Access your locker with just your phone.</p>
+            </div>
+            <div class="safety-card">
+                <img src="sensor icon.png" alt="Sensor Detection Icon">
+                <h3 class="lineh3">Step 3: Sensor Detection</h3>
+                <p>Smart sensors ensure your luggage is securely stored.</p>
+            </div>
+            <div class="safety-card">
+                <img src="location icon.png" alt="Real-time Monitoring Icon">
+                <h3 class="lineh3">Step 4: Real-time Monitoring</h3>
+                <p>Track your luggage status anytime via the Mlock app.</p>
+            </div>
+            <div class="safety-card">
+                <img src="security icon.png" alt="Security Alert Icon">
+                <h3 class="lineh3">Step 5: Security Alert</h3>
+                <p>Instant alerts in case of any unauthorized access or impact.</p>
+            </div>
+            <div class="safety-card">
+                <img src="unlock icon.png" alt="Unlock and Retrieve Icon">
+                <h3 class="lineh3">Step 6: Unlock & Retrieve</h3>
+                <p>Use the app to unlock your locker and retrieve luggage securely.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- hero section-4 -->
+    <section class="section-4">
+        <h2 class="lineh2">🚧 Limitations & Honest Disclaimer</h2>
+
+        <div class="limitation">
+            <i class="fa-solid fa-flask"></i>
+            <p><span class="highlight">⚠ Trial Phase :</span> Our system is still improving, so **100% security is not
+                guaranteed** yet.</p>
+        </div>
+
+        <div class="limitation">
+            <i class="fa-solid fa-shield-alt"></i>
+            <p><span class="highlight">⚠ No Insurance (Yet) :</span> Currently, we **do not provide compensation for
+                theft**,
+                but we are working on it.</p>
+        </div>
+
+        <div class="limitation">
+            <i class="fa-solid fa-clock"></i>
+            <p><span class="highlight">⚠ Limited Service Hours :</span> We operate **16 hours daily**, not 24/7.</p>
+        </div>
+
+    </section>
+
+
+    <div
+        style="text-align: center; margin-top: 25px; padding: 15px; background: #fff8e1; border-left: 5px solid #ff9800; border-radius: 5px;">
+        <p style="font-size: 16px; color: #444; font-weight: 500; margin: 0;">
+            🚀 <span style="color: #ff9800; font-weight: bold;">Exciting Updates Ahead : </span>
+            We are working on **insurance coverage, 24/7 service, and more features!**
+            Stay tuned for updates! 📢
+        </p>
+    </div>
+
+
+    <!-- Footer Section -->
+
+
+    <footer class="footer">
+        <div class="container1"> <!--or container( sai whiteouterside,)-->
+            <div class="footer-content">
+                <!-- Get The App Section (Left Side) -->
+                <div class="footer-section">
+                    <h3>Get The App</h3>
+
+                    <div class="btns">
+                        <a href="#" class="app-store">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48"
+                                fill="currentColor">
+                                <path
+                                    d="M11.6734 7.22198C10.7974 7.22198 9.44138 6.22598 8.01338 6.26198C6.12938 6.28598 4.40138 7.35397 3.42938 9.04597C1.47338 12.442 2.92538 17.458 4.83338 20.218C5.76938 21.562 6.87338 23.074 8.33738 23.026C9.74138 22.966 10.2694 22.114 11.9734 22.114C13.6654 22.114 14.1454 23.026 15.6334 22.99C17.1454 22.966 18.1054 21.622 19.0294 20.266C20.0974 18.706 20.5414 17.194 20.5654 17.11C20.5294 17.098 17.6254 15.982 17.5894 12.622C17.5654 9.81397 19.8814 8.46998 19.9894 8.40998C18.6694 6.47798 16.6414 6.26198 15.9334 6.21398C14.0854 6.06998 12.5374 7.22198 11.6734 7.22198ZM14.7934 4.38998C15.5734 3.45398 16.0894 2.14598 15.9454 0.849976C14.8294 0.897976 13.4854 1.59398 12.6814 2.52998C11.9614 3.35798 11.3374 4.68998 11.5054 5.96198C12.7414 6.05798 14.0134 5.32598 14.7934 4.38998Z">
+                                </path>
+                            </svg>
+                            <div class="btn-info">
+                                <span class="subtitle">download on the</span>
+                                <h2 class="title">app store</h2>
+                            </div>
+                        </a>
+                        <a href="#" class="play-store">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48"
+                                fill="currentColor">
+                                <path
+                                    d="M3.60972 1.81396L13.793 12L3.61082 22.1864C3.41776 22.1048 3.24866 21.962 3.13555 21.7667C3.0474 21.6144 3.00098 21.4416 3.00098 21.2656V2.73453C3.00098 2.32109 3.25188 1.96625 3.60972 1.81396ZM14.5 12.707L16.802 15.009L5.86498 21.342L14.5 12.707ZM17.699 9.50896L20.5061 11.1347C20.9841 11.4114 21.1473 12.0232 20.8705 12.5011C20.783 12.6523 20.6574 12.778 20.5061 12.8655L17.698 14.491L15.207 12L17.699 9.50896ZM5.86498 2.65796L16.803 8.98996L14.5 11.293L5.86498 2.65796Z">
+                                </path>
+                            </svg>
+                            <div class="btn-info">
+                                <span class="subtitle">download on</span>
+                                <h2 class="title">google <span>play</span></h2>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- <div class="app-buttons">
+                        <a href="#"><img src="google-play.png" alt="Google Play"></a>
+                        <a href="#"><img src="app-store.png" alt="App Store"></a>
+                    </div> -->
+                </div>
+
+                <!-- Navigation & Legal Links (Center) -->
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="Homefinal.html">Home</a></li>
+                        <li><a href="Aboutusfinal.html">About Us</a></li>
+                        <li><a href="Safetyfinal.html">Safety</a></li>
+                        <li><a href="Teamfinal.html">Team</a></li>
+                        <li><a href="Blogfinal.html">Blog</a></li>
+                        <li><a href="contactfinal.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="Policy.html">Privacy Policy</a></li>
+                        <li><a href="FAQ.html">FAQ</a></li>
+                        <li><a href="ProblemClip.html">Problem Clip</a></li>
+                        <li><a href="Solutionvideo.html">Solution Video</a></li>
+                    </ul>
+                </div>
+
+                <!-- Follow Us (Right Side) -->
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-youtube"></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Separator Line -->
+            <hr class="footer-line">
+
+            <!-- Footer Logo -->
+            <!-- <div class="footer-logo">
+                <div class="logo-text">
+                    <span class="logo-m">M</span><span class="logo-lock">lock</span>
+                </div>
+            </div> -->
+            <a href="https://mlock.in">
+                <img class="img-logo-footer" src="Web-logo-img-footer.jpg" alt="Mlock Logo">
+            </a>
+
+            <!-- Copyright Text -->
+            <p class="footer-end">© 2025 Mlock. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
