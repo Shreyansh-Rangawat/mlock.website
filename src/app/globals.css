@@ -24,3 +24,22 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Legacy hover styles used in static HTML; keep minimal and rely on Tailwind for most styling */
+.menu-item-hover {
+  font-weight: normal;
+  text-decoration: none;
+}
+.menu-item-hover:hover {
+  color: #18ee18;
+  font-weight: bold;
+  text-decoration: underline 3px black;
+}
+
+/* Utility to match legacy green button color */
+.btn-download {
+  background-color: #18ee18;
+}
+.btn-download:hover {
+  background-color: #4b4b4b;
+}
