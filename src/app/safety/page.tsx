@@ -14,7 +14,7 @@ export default function SafetyPage() {
           className="mx-auto flex h-[80vh] w-screen max-w-none items-center justify-center bg-cover bg-center px-5 text-center md:h-[90vh]"
           style={{
             backgroundImage:
-              "linear-gradient(rgba(107,67,49,0.5), rgba(107,67,49,0.5)), url('/mlock.website/storyimg2.png')",
+              "linear-gradient(rgba(107,67,49,0.5), rgba(107,67,49,0.5)), url('/storyimg2.png')",
           }}
         >
           <h1 className="text-balance text-3xl font-bold text-white md:text-5xl">

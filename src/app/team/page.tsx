@@ -8,7 +8,7 @@ export default function TeamPage() {
       {/* Hero banner */}
       <section
         className="h-[70vh] w-full bg-cover bg-center text-white"
-        style={{ backgroundImage: "linear-gradient(rgba(102,92,238,0.5), rgba(90,80,235,0.5)), url('/mlock.website/team-bg-image.png')" }}
+        style={{ backgroundImage: "linear-gradient(rgba(102,92,238,0.5), rgba(90,80,235,0.5)), url('/team-bg-image.png')" }}
       >
         <div className="px-8 pt-28">
           <h1 className="text-5xl font-bold">meet the minds<br />shaping the future of<br />smart storage</h1>

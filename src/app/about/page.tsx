@@ -85,7 +85,7 @@ export default function AboutPage() {
       {/* Our Story banner */}
       <section
         className="flex h-[60vh] w-full items-center bg-cover bg-center"
-        style={{ backgroundImage: "linear-gradient(rgba(100,98,98,0.5), rgba(114,112,110,0.5)), url('/mlock.website/storyimg.png')" }}
+        style={{ backgroundImage: "linear-gradient(rgba(100,98,98,0.5), rgba(114,112,110,0.5)), url('/storyimg.png')" }}
       >
         <h2 className="ml-12 text-5xl font-bold text-white">Our Story</h2>
       </section>
