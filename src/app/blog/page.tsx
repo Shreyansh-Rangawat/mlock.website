@@ -19,7 +19,7 @@ export default function BlogPage() {
         <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
           {posts.map((p) => (
             <article key={p.title} className="rounded-lg p-4 shadow">
-              <Image src={`/mlock.website/${p.img}`} alt={p.title} width={600} height={400} className="h-auto w-full rounded" />
+              <Image src={`/${p.img}`} alt={p.title} width={600} height={400} className="h-auto w-full rounded" />
               <h2 className="mt-3 text-xl font-bold">{p.title}</h2>
               <p className="mt-2 text-[16px]">{p.text}</p>
             </article>

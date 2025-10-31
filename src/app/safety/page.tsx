@@ -70,7 +70,7 @@ export default function SafetyPage() {
               className="justify-items-center rounded-xl bg-white p-6 text-center shadow-lg transition-transform hover:-translate-y-1"
             >
               <Image
-                src={`/mlock.website/${card.src}`}
+                src={`/${card.src}`}
                 alt={card.title}
                 width={80}
                 height={80}

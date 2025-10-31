@@ -75,7 +75,7 @@ export default function Footer() {
           <Link href="https://mlock.in" className="block">
             <Image
               className="ml-16 rounded-md"
-              src="/mlock.website/Web-logo-img-footer.jpg"
+              src="/Web-logo-img-footer.jpg"
               width={135}
               height={60}
               alt="Mlock Logo"

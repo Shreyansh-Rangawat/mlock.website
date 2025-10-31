@@ -31,7 +31,7 @@ export default function PricingClient() {
         </div>
         <div className="rounded-lg">
           <video className="h-[300px] w-full rounded-lg" autoPlay muted loop controls>
-            <source src="/mlock.website/check video final.mp4" />
+            <source src="/check video final.mp4" />
             Your browser does not support the video tag.
           </video>
         </div>

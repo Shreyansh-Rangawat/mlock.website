@@ -33,7 +33,7 @@ export default function AboutPage() {
           </p>
         </div>
         <div className="md:w-1/2 flex justify-center mt-8 md:mt-0">
-          <Image src="/mlock.website/f2.png" width={420} height={320} alt="Mlock icon" className="rounded-xl shadow" />
+          <Image src="/f2.png" width={420} height={320} alt="Mlock icon" className="rounded-xl shadow" />
         </div>
       </section>
 
@@ -78,7 +78,7 @@ export default function AboutPage() {
           </p>
         </div>
         <div className="md:w-2/5">
-          <Image src="/mlock.website/green.png" width={500} height={320} alt="Mission" className="rounded-md shadow" />
+          <Image src="/green.png" width={500} height={320} alt="Mission" className="rounded-md shadow" />
         </div>
       </section>
 

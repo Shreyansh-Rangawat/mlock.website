@@ -19,7 +19,7 @@ export default function TeamPage() {
       {/* Mentor */}
       <section className="mx-auto mt-16 flex max-w-6xl flex-col items-center gap-8 p-8 md:flex-row md:items-start">
         <div className="flex w-full flex-col items-center md:w-1/3 md:items-start">
-          <Image src="/mlock.website/Anubhav mentor.png" alt="Anubhav Yadav" width={160} height={160} className="h-40 w-40 rounded-full border-4 object-cover shadow" />
+          <Image src="/Anubhav mentor.png" alt="Anubhav Yadav" width={160} height={160} className="h-40 w-40 rounded-full border-4 object-cover shadow" />
           <h3 className="mt-4 text-2xl font-bold text-gray-800">Anubhav Yadav</h3>
           <p className="text-lg text-gray-600">Professor-Svvv</p>
         </div>
@@ -39,7 +39,7 @@ export default function TeamPage() {
           {/* Shreyansh */}
           <div className="grid grid-cols-[220px_1fr] items-start gap-6">
             <div className="h-[360px] w-[220px] rounded bg-[#b8b0b0] shadow border border-black">
-              <Image src="/mlock.website/Shreyansh team.jpg" alt="Shreyansh" width={220} height={360} className="h-full w-full rounded object-cover" />
+              <Image src="/Shreyansh team.jpg" alt="Shreyansh" width={220} height={360} className="h-full w-full rounded object-cover" />
               <div className="text-center text-white">
                 <h3>Shreyansh Jain</h3>
                 <h4>Lead</h4>
@@ -64,7 +64,7 @@ export default function TeamPage() {
               </p>
             </div>
             <div className="h-[360px] w-[220px] rounded bg-[#b8b0b0] shadow border border-black">
-              <Image src="/mlock.website/Saif team.jpeg" alt="Saif" width={220} height={360} className="h-full w-full rounded object-cover" />
+              <Image src="/Saif team.jpeg" alt="Saif" width={220} height={360} className="h-full w-full rounded object-cover" />
               <div className="text-center text-white">
                 <h3 className="mt-5">Saif Ali Shahk</h3>
                 <h4>Lead</h4>
@@ -75,7 +75,7 @@ export default function TeamPage() {
           {/* Jayesh */}
           <div className="grid grid-cols-[220px_1fr] items-start gap-6 md:col-span-2">
             <div className="h-[383px] w-[220px] rounded bg-[#b8b0b0] shadow border border-black">
-              <Image src="/mlock.website/Jayesh team.JPG" alt="Jayesh" width={220} height={383} className="h-full w-full rounded object-cover" />
+              <Image src="/Jayesh team.JPG" alt="Jayesh" width={220} height={383} className="h-full w-full rounded object-cover" />
               <div className="text-center text-white">
                 <h3>Jayesh Patel</h3>
                 <h4>Lead</h4>

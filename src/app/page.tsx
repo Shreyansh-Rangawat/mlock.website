@@ -59,7 +59,7 @@ export default function Home() {
         </div>
         <div className="mx-auto grid max-w-6xl grid-cols-2 gap-4 p-4 sm:grid-cols-3 md:grid-cols-6">
           {["home-img1.png","home-img2.png","home-img3.png","home-img4.png","home-img5.png","image3.png"].map((img)=>(
-            <Image key={img} src={`/mlock.website/${img}`} alt={img} width={260} height={350} className="h-[220px] w-full rounded-md object-cover shadow" />
+            <Image key={img} src={`/${img}`} alt={img} width={260} height={350} className="h-[220px] w-full rounded-md object-cover shadow" />
           ))}
         </div>
       </section>

@@ -44,7 +44,7 @@ export default function ProblemImagePage() {
         ].map((src) => (
           <img
             key={src}
-            src={`/mlock.website/${src}`}
+            src={`/${src}`}
             alt={src}
             className="h-auto w-full rounded-md object-cover shadow-sm"
             loading="lazy"
